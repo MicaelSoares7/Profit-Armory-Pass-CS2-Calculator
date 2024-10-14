@@ -16,6 +16,7 @@ precob = (box/estrela)*passe
 precoc = (chaveiros/estrela)*passe
 precos = (stiker/estrela)*passe
 
+print("Preço calculado em cima do valor do passe!")
 print("+------------------+>")
 print(f"|Desert: R$ {precod:.2f}")
 print(f"|Caixa: R$ {precob:.2f}")
@@ -30,9 +31,15 @@ s = int(input("Digite o quantidade de stiker: "))
 
 
 pontos = (d*desert) + (c*chaveiros) + (b*box) + (s*stiker)
+falta = pontos-estrela
+sobra = estrela-pontos
 
 print("")
-print(f"Vai custar {pontos} pontos e vai faltar: {estrela-pontos}")
+if estrela-pontos <= 0:
+    print(f"Vai custar {pontos} pontos e vai faltar: {falta} pontos")
+else:
+    print(f"Vai custar {pontos} pontos e vai sobrar: {sobra} pontos")
+
 print("")
 
 if (d or b or c or s) > 0:
@@ -47,9 +54,13 @@ if (d or b or c or s) > 0:
     
     total = (precod * d) + (precob * b) + (precoc *c) + (precos * s)
     lucro = total-passe
+    perda = passe-total
 
     print("")
     print("Você receberá o total de R$", total)
-    print(f"Seu lucro será de R$ {lucro:.2f}")        
+    if lucro > 0:
+        print(f"Seu lucro será de R$ {lucro:.2f}")      
+    else:
+        print(f"Você não terá lucro! Você perdeu R$ {perda:.2f}")  
 else:
     print("Nenhum item selecionado...")
