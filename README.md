@@ -5,7 +5,7 @@ Calculadora feita em python para auxiliar a queles que querem calcular de forma 
 <ul>
   <li>git clone https://github.com/MicaelSoares7/Profit-Armory-Pass-CS2-Calculator.git</li>
 <ul>
-
+<br>
 <h2> Windows PowerShell / cmd: </h2>
 <ul>
   <li>python profit.py</li>
