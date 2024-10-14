@@ -36,28 +36,33 @@ sobra = estrela-pontos
 
 print("")
 if estrela-pontos <= 0:
-    print(f"Vai custar {pontos} pontos e vai faltar: {falta} pontos")
+    print(f"Vai custar: {pontos} pontos e você precisará de mais: {falta} pontos")
 else:
-    print(f"Vai custar {pontos} pontos e vai sobrar: {sobra} pontos")
-
+    print(f"Vai custar: {pontos} pontos e vai sobrar: {sobra} pontos")
 print("")
 
 if (d or b or c or s) > 0:
     if d > 0:
-        precod = float(input("Digite o valor atual da desert: "))
-    if b>0:
+        for i in range(d):
+            precod = float(input("Digite o valor atual da desert: "))
+
+    if b > 0:
         precob = float(input("Digite o valor atual da caixa: "))
-    if c>0:
-        precoc = float(input("Digite o valor atual do chaveiro: "))
-    if s>0:
-        precos = float(input("Digite o valor atual do stiker: "))
+
+    if c > 0:
+        for i in range(c):
+            precoc = float(input("Digite o valor atual do chaveiro: "))
+
+    if s > 0:
+        for i in range(s):
+            precos = float(input("Digite o valor atual do stiker: "))
     
     total = (precod * d) + (precob * b) + (precoc *c) + (precos * s)
     lucro = total-passe
     perda = passe-total
 
     print("")
-    print("Você receberá o total de R$", total)
+    print(f"Você receberá o total de R$ {total:.2f}")
     if lucro > 0:
         print(f"Seu lucro será de R$ {lucro:.2f}")      
     else:
