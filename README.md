@@ -10,3 +10,11 @@ Calculadora feita em python para auxiliar a queles que querem calcular de forma 
 <ul>
   <li>python profit.py</li>
 </ul>
+
+
+
+OBS:
+
+Enter the price of each item as the amount you will receive, already considering the Steam fee, so that it is as close as possible to the real profit.
+
+Digite no preço de cada item o valor que você receberá, já considerando a taxa da Steam, para que fique o mais próximo possível do lucro real.

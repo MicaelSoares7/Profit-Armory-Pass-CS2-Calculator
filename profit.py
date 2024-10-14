@@ -1,5 +1,5 @@
-#O obijetivo é calcular o maior lucro possível no passe atual, sabendo o quantidade de cada item e que só temos 40 pontos por passe.
-# Qual vou lucrar mais, levando em consideração a taxa da venda da steam.
+# O obijetivo é calcular o maior lucro possível no passe atual, sabendo a quantidade de cada item e que só temos 40 pontos por passe.
+# Qual vou lucrar mais, digite os valores levando em consideração a taxa da venda da steam!.
 
 passe = 88.99
 estrela = 40
