@@ -33,6 +33,8 @@ pontos = (d*desert) + (c*chaveiros) + (b*box) + (s*stiker)
 
 print("")
 print(f"Vai custar {pontos} pontos e vai faltar: {estrela-pontos}")
+print("")
+
 if (d or b or c or s) > 0:
     if d > 0:
         precod = float(input("Digite o valor atual da desert: "))
