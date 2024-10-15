@@ -12,7 +12,6 @@ Calculadora feita em python para auxiliar a queles que querem calcular de forma 
 </ul>
 
 
-
 OBS:
 
 Enter the price of each item as the amount you will receive, already considering the Steam fee, so that it is as close as possible to the real profit.
